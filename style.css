@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #e2118b;
+}
+
+#title {
+  height: 150px;
+  width: 150px;
+}
+
+#board {
+  width: 500px; /* Değer güncellendi */
+  height: 600px; /* Değer güncellendi */
+  background-color: rgb(233, 199, 224);
+  border: 10px solid #e2118b;
+
+  margin: 0 auto;
+  display: grid; /* Değer güncellendi */
+  grid-template-columns: repeat(4, 1fr); /* 4 sütun */
+  grid-template-rows: repeat(4, 1fr); /* 4 satır */
+  gap: 1px; /* Daha iyi aralıklar için */
+  padding: 1px; /* Daha iyi görünüm için */
+}
+
+#board img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Resimlerin boyutlarına sığması için */
+  border: 1px solid rgb(233, 199, 224);
+}
